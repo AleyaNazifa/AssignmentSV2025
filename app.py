@@ -1,17 +1,30 @@
 import streamlit as st
 
+# --- Page Configuration ---
 st.set_page_config(
-    page_title="HFMD Visualization"
+    page_title="HFMD Malaysia Visualization",
+    page_icon="🦠"
 )
 
-visualise = st.Page('hfdm_visualization.py', title='visualization', icon=":material/school:")
+# --- Import Pages ---
+home = st.Page(
+    'home.py',
+    title='Homepage',
+    icon=":material/home:",
+    default=True
+)
 
-home = st.Page('home.py', title='Homepage', default=True, icon=":material/home:")
+visualise = st.Page(
+    'hfmd_visualisation.py',
+    title='HFMD and Weather Analysis',
+    icon=":material/bar_chart:"
+)
 
+# --- Navigation Menu ---
 pg = st.navigation(
-        {
-            "Menu": [home, visualise]
-        }
-    )
+    {
+        "Menu": [home, visualise]
+    }
+)
 
 pg.run()
