@@ -21,7 +21,7 @@ col_url, col_up = st.columns([2, 1])
 with col_url:
     RAW_CSV_URL = st.text_input(
         "GitHub Raw CSV URL",
-        value="https://raw.githubusercontent.com/<your-username>/<your-repo>/main/hfmd_data.csv",
+        value="https://raw.githubusercontent.com/AleyaNazifa/AssignmentSV2025/refs/heads/main/hfdm_data%20-%20Upload.csv",
         placeholder="https://raw.githubusercontent.com/<user>/<repo>/main/file.csv",
     )
 with col_up:
