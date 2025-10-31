@@ -22,7 +22,7 @@ with col_url:
     RAW_CSV_URL = st.text_input(
         "GitHub Raw CSV URL",
         value="https://raw.githubusercontent.com/AleyaNazifa/AssignmentSV2025/refs/heads/main/hfdm_data%20-%20Upload.csv",
-        placeholder="https://raw.githubusercontent.com/<user>/<repo>/main/file.csv",
+        placeholder="https://github.com/AleyaNazifa/AssignmentSV2025/blob/main/app.py",
     )
 with col_up:
     uploaded = st.file_uploader("...or Upload CSV", type=["csv"])
